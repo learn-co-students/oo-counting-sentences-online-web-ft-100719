@@ -15,8 +15,6 @@ class String
   end
 
   def count_sentences
-    separated = self.split(/[.|?|!]/)
-    selected = separated.select {|i| i != ""}
-    count = selected.length
+    count = self.split(/[.|?|!]/).select {|i| i != ""}.length
   end
 end
